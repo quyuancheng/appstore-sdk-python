@@ -34,6 +34,7 @@ class V1CreateAppPaaSVersionRequest(object):
     """
     openapi_types = {
         'description': 'str',
+        'is_plugin': 'bool',
         'rainbond_version': 'str',
         'template': 'V1alpha1RainbondApplicationConfig',
         'template_type': 'str',
@@ -43,6 +44,7 @@ class V1CreateAppPaaSVersionRequest(object):
 
     attribute_map = {
         'description': 'description',
+        'is_plugin': 'is_plugin',
         'rainbond_version': 'rainbondVersion',
         'template': 'template',
         'template_type': 'templateType',
@@ -50,13 +52,14 @@ class V1CreateAppPaaSVersionRequest(object):
         'version_alias': 'versionAlias'
     }
 
-    def __init__(self, description=None, rainbond_version=None, template=None, template_type=None, version=None, version_alias=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, description=None, is_plugin=None, rainbond_version=None, template=None, template_type=None, version=None, version_alias=None, local_vars_configuration=None):  # noqa: E501
         """V1CreateAppPaaSVersionRequest - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._description = None
+        self._is_plugin = None
         self._rainbond_version = None
         self._template = None
         self._template_type = None
@@ -65,6 +68,7 @@ class V1CreateAppPaaSVersionRequest(object):
         self.discriminator = None
 
         self.description = description
+        self.is_plugin = is_plugin
         self.rainbond_version = rainbond_version
         self.template = template
         self.template_type = template_type
@@ -93,6 +97,29 @@ class V1CreateAppPaaSVersionRequest(object):
             raise ValueError("Invalid value for `description`, must not be `None`")  # noqa: E501
 
         self._description = description
+
+    @property
+    def is_plugin(self):
+        """Gets the is_plugin of this V1CreateAppPaaSVersionRequest.  # noqa: E501
+
+
+        :return: The is_plugin of this V1CreateAppPaaSVersionRequest.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_plugin
+
+    @is_plugin.setter
+    def is_plugin(self, is_plugin):
+        """Sets the is_plugin of this V1CreateAppPaaSVersionRequest.
+
+
+        :param is_plugin: The is_plugin of this V1CreateAppPaaSVersionRequest.  # noqa: E501
+        :type: bool
+        """
+        if self.local_vars_configuration.client_side_validation and is_plugin is None:  # noqa: E501
+            raise ValueError("Invalid value for `is_plugin`, must not be `None`")  # noqa: E501
+
+        self._is_plugin = is_plugin
 
     @property
     def rainbond_version(self):

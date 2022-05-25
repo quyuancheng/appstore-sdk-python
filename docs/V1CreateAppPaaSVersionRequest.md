@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **description** | **str** |  | 
+**is_plugin** | **bool** |  | 
 **rainbond_version** | **str** |  | 
 **template** | [**V1alpha1RainbondApplicationConfig**](V1alpha1RainbondApplicationConfig.md) |  | 
 **template_type** | **str** |  | 

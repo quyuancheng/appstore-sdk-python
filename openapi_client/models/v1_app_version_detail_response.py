@@ -39,6 +39,7 @@ class V1AppVersionDetailResponse(object):
         'delivery_mode': 'str',
         'description': 'str',
         'enable': 'bool',
+        'is_plugin': 'bool',
         'market_id': 'str',
         'rainbond_version': 'str',
         'template': 'str',
@@ -56,6 +57,7 @@ class V1AppVersionDetailResponse(object):
         'delivery_mode': 'deliveryMode',
         'description': 'description',
         'enable': 'enable',
+        'is_plugin': 'is_plugin',
         'market_id': 'marketID',
         'rainbond_version': 'rainbondVersion',
         'template': 'template',
@@ -66,7 +68,7 @@ class V1AppVersionDetailResponse(object):
         'version_alias': 'versionAlias'
     }
 
-    def __init__(self, app_key_id=None, app_name=None, create_time=None, delivery_mode=None, description=None, enable=None, market_id=None, rainbond_version=None, template=None, template_type=None, update_time=None, update_version=None, version=None, version_alias=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, app_key_id=None, app_name=None, create_time=None, delivery_mode=None, description=None, enable=None, is_plugin=None, market_id=None, rainbond_version=None, template=None, template_type=None, update_time=None, update_version=None, version=None, version_alias=None, local_vars_configuration=None):  # noqa: E501
         """V1AppVersionDetailResponse - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -78,6 +80,7 @@ class V1AppVersionDetailResponse(object):
         self._delivery_mode = None
         self._description = None
         self._enable = None
+        self._is_plugin = None
         self._market_id = None
         self._rainbond_version = None
         self._template = None
@@ -94,6 +97,7 @@ class V1AppVersionDetailResponse(object):
         self.delivery_mode = delivery_mode
         self.description = description
         self.enable = enable
+        self.is_plugin = is_plugin
         self.market_id = market_id
         self.rainbond_version = rainbond_version
         self.template = template
@@ -250,6 +254,31 @@ class V1AppVersionDetailResponse(object):
             raise ValueError("Invalid value for `enable`, must not be `None`")  # noqa: E501
 
         self._enable = enable
+
+    @property
+    def is_plugin(self):
+        """Gets the is_plugin of this V1AppVersionDetailResponse.  # noqa: E501
+
+        是否分享插件  # noqa: E501
+
+        :return: The is_plugin of this V1AppVersionDetailResponse.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_plugin
+
+    @is_plugin.setter
+    def is_plugin(self, is_plugin):
+        """Sets the is_plugin of this V1AppVersionDetailResponse.
+
+        是否分享插件  # noqa: E501
+
+        :param is_plugin: The is_plugin of this V1AppVersionDetailResponse.  # noqa: E501
+        :type: bool
+        """
+        if self.local_vars_configuration.client_side_validation and is_plugin is None:  # noqa: E501
+            raise ValueError("Invalid value for `is_plugin`, must not be `None`")  # noqa: E501
+
+        self._is_plugin = is_plugin
 
     @property
     def market_id(self):

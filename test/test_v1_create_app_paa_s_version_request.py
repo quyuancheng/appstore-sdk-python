@@ -37,6 +37,7 @@ class TestV1CreateAppPaaSVersionRequest(unittest.TestCase):
         if include_optional :
             return V1CreateAppPaaSVersionRequest(
                 description = '0', 
+                is_plugin = True, 
                 rainbond_version = '0', 
                 template = openapi_client.models.v1alpha1/rainbond_application_config.v1alpha1.RainbondApplicationConfig(
                     annotations = {
@@ -280,6 +281,7 @@ class TestV1CreateAppPaaSVersionRequest(unittest.TestCase):
         else :
             return V1CreateAppPaaSVersionRequest(
                 description = '0',
+                is_plugin = True,
                 rainbond_version = '0',
                 template = openapi_client.models.v1alpha1/rainbond_application_config.v1alpha1.RainbondApplicationConfig(
                     annotations = {
