@@ -121,7 +121,7 @@ class PlatformOpenApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['api_key']  # noqa: E501
 
         return self.api_client.call_api(
             '/app-server/openapi/healthz', 'GET',
