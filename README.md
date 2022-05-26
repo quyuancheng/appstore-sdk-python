@@ -87,7 +87,6 @@ Class | Method | HTTP request | Description
 *MarketOpenapiApi* | [**get_market_info**](docs/MarketOpenapiApi.md#get_market_info) | **GET** /app-server/openapi/info | 获取商店信息
 *MarketOpenapiApi* | [**get_user_app_detail**](docs/MarketOpenapiApi.md#get_user_app_detail) | **GET** /app-server/openapi/apps/{appID} | 应用详情
 *MarketOpenapiApi* | [**get_user_app_list**](docs/MarketOpenapiApi.md#get_user_app_list) | **GET** /app-server/openapi/apps | 应用列表
-*MarketOpenapiApi* | [**get_user_app_temp_list**](docs/MarketOpenapiApi.md#get_user_app_temp_list) | **GET** /app-server/openapi/apps/template | 应用模版列表
 *MarketOpenapiApi* | [**get_user_app_version_detail**](docs/MarketOpenapiApi.md#get_user_app_version_detail) | **GET** /app-server/openapi/apps/{appID}/versions/{version} | 应用版本信息
 *MarketOpenapiApi* | [**get_user_app_versions**](docs/MarketOpenapiApi.md#get_user_app_versions) | **GET** /app-server/openapi/apps/{appID}/versions | 应用版本列表
 *MarketOpenapiApi* | [**update_app**](docs/MarketOpenapiApi.md#update_app) | **PUT** /app-server/openapi/apps/{appID} | 更新应用信息

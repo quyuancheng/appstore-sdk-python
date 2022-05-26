@@ -40,6 +40,7 @@ class V1AppVersionBase(object):
         'delivery_mode': 'str',
         'desc': 'str',
         'enable': 'bool',
+        'is_plugin': 'bool',
         'rainbond_version': 'str',
         'update_time': 'datetime',
         'update_version': 'int'
@@ -53,12 +54,13 @@ class V1AppVersionBase(object):
         'delivery_mode': 'deliveryMode',
         'desc': 'desc',
         'enable': 'enable',
+        'is_plugin': 'is_plugin',
         'rainbond_version': 'rainbondVersion',
         'update_time': 'updateTime',
         'update_version': 'updateVersion'
     }
 
-    def __init__(self, app_key_id=None, app_version=None, app_version_alias=None, create_time=None, delivery_mode=None, desc=None, enable=None, rainbond_version=None, update_time=None, update_version=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, app_key_id=None, app_version=None, app_version_alias=None, create_time=None, delivery_mode=None, desc=None, enable=None, is_plugin=None, rainbond_version=None, update_time=None, update_version=None, local_vars_configuration=None):  # noqa: E501
         """V1AppVersionBase - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -71,6 +73,7 @@ class V1AppVersionBase(object):
         self._delivery_mode = None
         self._desc = None
         self._enable = None
+        self._is_plugin = None
         self._rainbond_version = None
         self._update_time = None
         self._update_version = None
@@ -83,6 +86,7 @@ class V1AppVersionBase(object):
         self.delivery_mode = delivery_mode
         self.desc = desc
         self.enable = enable
+        self.is_plugin = is_plugin
         self.rainbond_version = rainbond_version
         self.update_time = update_time
         self.update_version = update_version
@@ -263,10 +267,35 @@ class V1AppVersionBase(object):
         self._enable = enable
 
     @property
+    def is_plugin(self):
+        """Gets the is_plugin of this V1AppVersionBase.  # noqa: E501
+
+        是否作为插件  # noqa: E501
+
+        :return: The is_plugin of this V1AppVersionBase.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_plugin
+
+    @is_plugin.setter
+    def is_plugin(self, is_plugin):
+        """Sets the is_plugin of this V1AppVersionBase.
+
+        是否作为插件  # noqa: E501
+
+        :param is_plugin: The is_plugin of this V1AppVersionBase.  # noqa: E501
+        :type: bool
+        """
+        if self.local_vars_configuration.client_side_validation and is_plugin is None:  # noqa: E501
+            raise ValueError("Invalid value for `is_plugin`, must not be `None`")  # noqa: E501
+
+        self._is_plugin = is_plugin
+
+    @property
     def rainbond_version(self):
         """Gets the rainbond_version of this V1AppVersionBase.  # noqa: E501
 
-        rianbond 版本  # noqa: E501
+        rainbond 版本  # noqa: E501
 
         :return: The rainbond_version of this V1AppVersionBase.  # noqa: E501
         :rtype: str
@@ -277,7 +306,7 @@ class V1AppVersionBase(object):
     def rainbond_version(self, rainbond_version):
         """Sets the rainbond_version of this V1AppVersionBase.
 
-        rianbond 版本  # noqa: E501
+        rainbond 版本  # noqa: E501
 
         :param rainbond_version: The rainbond_version of this V1AppVersionBase.  # noqa: E501
         :type: str
@@ -291,6 +320,7 @@ class V1AppVersionBase(object):
     def update_time(self):
         """Gets the update_time of this V1AppVersionBase.  # noqa: E501
 
+        更新时间  # noqa: E501
 
         :return: The update_time of this V1AppVersionBase.  # noqa: E501
         :rtype: datetime
@@ -301,6 +331,7 @@ class V1AppVersionBase(object):
     def update_time(self, update_time):
         """Sets the update_time of this V1AppVersionBase.
 
+        更新时间  # noqa: E501
 
         :param update_time: The update_time of this V1AppVersionBase.  # noqa: E501
         :type: datetime

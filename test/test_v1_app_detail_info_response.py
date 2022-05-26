@@ -77,6 +77,7 @@ class TestV1AppDetailInfoResponse(unittest.TestCase):
                         delivery_mode = '0', 
                         desc = '0', 
                         enable = True, 
+                        is_plugin = True, 
                         rainbond_version = '0', 
                         update_time = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         update_version = 56, )
@@ -125,6 +126,7 @@ class TestV1AppDetailInfoResponse(unittest.TestCase):
                         delivery_mode = '0', 
                         desc = '0', 
                         enable = True, 
+                        is_plugin = True, 
                         rainbond_version = '0', 
                         update_time = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         update_version = 56, )

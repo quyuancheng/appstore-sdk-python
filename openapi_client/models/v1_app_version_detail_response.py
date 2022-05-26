@@ -259,7 +259,7 @@ class V1AppVersionDetailResponse(object):
     def is_plugin(self):
         """Gets the is_plugin of this V1AppVersionDetailResponse.  # noqa: E501
 
-        是否分享插件  # noqa: E501
+        是否作为插件  # noqa: E501
 
         :return: The is_plugin of this V1AppVersionDetailResponse.  # noqa: E501
         :rtype: bool
@@ -270,7 +270,7 @@ class V1AppVersionDetailResponse(object):
     def is_plugin(self, is_plugin):
         """Sets the is_plugin of this V1AppVersionDetailResponse.
 
-        是否分享插件  # noqa: E501
+        是否作为插件  # noqa: E501
 
         :param is_plugin: The is_plugin of this V1AppVersionDetailResponse.  # noqa: E501
         :type: bool

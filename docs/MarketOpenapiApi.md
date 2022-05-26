@@ -11,7 +11,6 @@ Method | HTTP request | Description
 [**get_market_info**](MarketOpenapiApi.md#get_market_info) | **GET** /app-server/openapi/info | 获取商店信息
 [**get_user_app_detail**](MarketOpenapiApi.md#get_user_app_detail) | **GET** /app-server/openapi/apps/{appID} | 应用详情
 [**get_user_app_list**](MarketOpenapiApi.md#get_user_app_list) | **GET** /app-server/openapi/apps | 应用列表
-[**get_user_app_temp_list**](MarketOpenapiApi.md#get_user_app_temp_list) | **GET** /app-server/openapi/apps/template | 应用模版列表
 [**get_user_app_version_detail**](MarketOpenapiApi.md#get_user_app_version_detail) | **GET** /app-server/openapi/apps/{appID}/versions/{version} | 应用版本信息
 [**get_user_app_versions**](MarketOpenapiApi.md#get_user_app_versions) | **GET** /app-server/openapi/apps/{appID}/versions | 应用版本列表
 [**update_app**](MarketOpenapiApi.md#update_app) | **PUT** /app-server/openapi/apps/{appID} | 更新应用信息
@@ -435,76 +434,6 @@ page_size = 56 # int | 每页的大小. -1 表示不限制 (optional)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling MarketOpenapiApi->get_user_app_list: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **market_domain** | **str**| 商店域 | 
- **query** | **str**| 搜索项 | [optional] 
- **query_all** | **bool**| 是否查询全部 | [optional] 
- **page** | **int**| 页码 | [optional] 
- **page_size** | **int**| 每页的大小. -1 表示不限制 | [optional] 
-
-### Return type
-
-[**V1UserAppListResponse**](V1UserAppListResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | OK |  -  |
-**404** | market not found |  -  |
-**500** | server failure |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **get_user_app_temp_list**
-> V1UserAppListResponse get_user_app_temp_list(market_domain, query=query, query_all=query_all, page=page, page_size=page_size)
-
-应用模版列表
-
-### Example
-
-```python
-from __future__ import print_function
-import time
-import openapi_client
-from openapi_client.rest import ApiException
-from pprint import pprint
-# Defining the host is optional and defaults to http://127.0.0.1:8080
-# See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "http://127.0.0.1:8080"
-)
-
-
-# Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
-    # Create an instance of the API class
-    api_instance = openapi_client.MarketOpenapiApi(api_client)
-    market_domain = 'market_domain_example' # str | 商店域
-query = 'query_example' # str | 搜索项 (optional)
-query_all = True # bool | 是否查询全部 (optional)
-page = 56 # int | 页码 (optional)
-page_size = 56 # int | 每页的大小. -1 表示不限制 (optional)
-
-    try:
-        # 应用模版列表
-        api_response = api_instance.get_user_app_temp_list(market_domain, query=query, query_all=query_all, page=page, page_size=page_size)
-        pprint(api_response)
-    except ApiException as e:
-        print("Exception when calling MarketOpenapiApi->get_user_app_temp_list: %s\n" % e)
 ```
 
 ### Parameters

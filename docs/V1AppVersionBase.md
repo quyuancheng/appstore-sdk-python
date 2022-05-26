@@ -10,8 +10,9 @@ Name | Type | Description | Notes
 **delivery_mode** | **str** | 交付模式 | 
 **desc** | **str** | 描述 | 
 **enable** | **bool** | 开启 | 
-**rainbond_version** | **str** | rianbond 版本 | 
-**update_time** | **datetime** |  | 
+**is_plugin** | **bool** | 是否作为插件 | 
+**rainbond_version** | **str** | rainbond 版本 | 
+**update_time** | **datetime** | 更新时间 | 
 **update_version** | **int** | 升级版本 | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

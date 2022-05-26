@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **delivery_mode** | **str** | 交付类型 | 
 **description** | **str** | 描述 | 
 **enable** | **bool** | 是否开启 | 
-**is_plugin** | **bool** | 是否分享插件 | 
+**is_plugin** | **bool** | 是否作为插件 | 
 **market_id** | **str** | 商店 ID | 
 **rainbond_version** | **str** | rainbond 版本 | 
 **template** | **str** | 模板 | 
