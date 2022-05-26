@@ -38,12 +38,6 @@ class TestV1UserAppListResponse(unittest.TestCase):
             return V1UserAppListResponse(
                 apps = [
                     openapi_client.models.v1/app_base_info.v1.AppBaseInfo(
-                        app_classifications = [
-                            openapi_client.models.v1/app_classifications.v1.AppClassifications(
-                                app_classification_id = '0', 
-                                app_classification_name = '0', 
-                                parent_app_classification_id = '0', )
-                            ], 
                         app_detail_url = '0', 
                         app_key_id = '0', 
                         create_time = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
@@ -91,12 +85,6 @@ class TestV1UserAppListResponse(unittest.TestCase):
             return V1UserAppListResponse(
                 apps = [
                     openapi_client.models.v1/app_base_info.v1.AppBaseInfo(
-                        app_classifications = [
-                            openapi_client.models.v1/app_classifications.v1.AppClassifications(
-                                app_classification_id = '0', 
-                                app_classification_name = '0', 
-                                parent_app_classification_id = '0', )
-                            ], 
                         app_detail_url = '0', 
                         app_key_id = '0', 
                         create_time = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 

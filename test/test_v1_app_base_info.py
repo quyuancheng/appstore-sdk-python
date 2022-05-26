@@ -36,12 +36,6 @@ class TestV1AppBaseInfo(unittest.TestCase):
         # model = openapi_client.models.v1_app_base_info.V1AppBaseInfo()  # noqa: E501
         if include_optional :
             return V1AppBaseInfo(
-                app_classifications = [
-                    openapi_client.models.v1/app_classifications.v1.AppClassifications(
-                        app_classification_id = '0', 
-                        app_classification_name = '0', 
-                        parent_app_classification_id = '0', )
-                    ], 
                 app_detail_url = '0', 
                 app_key_id = '0', 
                 create_time = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
@@ -83,12 +77,6 @@ class TestV1AppBaseInfo(unittest.TestCase):
             )
         else :
             return V1AppBaseInfo(
-                app_classifications = [
-                    openapi_client.models.v1/app_classifications.v1.AppClassifications(
-                        app_classification_id = '0', 
-                        app_classification_name = '0', 
-                        parent_app_classification_id = '0', )
-                    ],
                 app_detail_url = '0',
                 app_key_id = '0',
                 create_time = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),

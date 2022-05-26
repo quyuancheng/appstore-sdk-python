@@ -33,7 +33,6 @@ class V1AppBaseInfo(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'app_classifications': 'list[V1AppClassifications]',
         'app_detail_url': 'str',
         'app_key_id': 'str',
         'create_time': 'datetime',
@@ -60,7 +59,6 @@ class V1AppBaseInfo(object):
     }
 
     attribute_map = {
-        'app_classifications': 'appClassifications',
         'app_detail_url': 'appDetailURL',
         'app_key_id': 'appKeyID',
         'create_time': 'createTime',
@@ -86,13 +84,12 @@ class V1AppBaseInfo(object):
         'versions': 'versions'
     }
 
-    def __init__(self, app_classifications=None, app_detail_url=None, app_key_id=None, create_time=None, desc=None, dev_status=None, download_count=None, install_count=None, introduction=None, introduction_html=None, is_official=None, logo=None, market_id=None, market_name=None, market_url=None, name=None, publish_type=None, publish_user=None, show_count=None, start_count=None, status=None, tags=None, update_time=None, versions=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, app_detail_url=None, app_key_id=None, create_time=None, desc=None, dev_status=None, download_count=None, install_count=None, introduction=None, introduction_html=None, is_official=None, logo=None, market_id=None, market_name=None, market_url=None, name=None, publish_type=None, publish_user=None, show_count=None, start_count=None, status=None, tags=None, update_time=None, versions=None, local_vars_configuration=None):  # noqa: E501
         """V1AppBaseInfo - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
-        self._app_classifications = None
         self._app_detail_url = None
         self._app_key_id = None
         self._create_time = None
@@ -118,7 +115,6 @@ class V1AppBaseInfo(object):
         self._versions = None
         self.discriminator = None
 
-        self.app_classifications = app_classifications
         self.app_detail_url = app_detail_url
         self.app_key_id = app_key_id
         self.create_time = create_time
@@ -142,31 +138,6 @@ class V1AppBaseInfo(object):
         self.tags = tags
         self.update_time = update_time
         self.versions = versions
-
-    @property
-    def app_classifications(self):
-        """Gets the app_classifications of this V1AppBaseInfo.  # noqa: E501
-
-        应用所属分类  # noqa: E501
-
-        :return: The app_classifications of this V1AppBaseInfo.  # noqa: E501
-        :rtype: list[V1AppClassifications]
-        """
-        return self._app_classifications
-
-    @app_classifications.setter
-    def app_classifications(self, app_classifications):
-        """Sets the app_classifications of this V1AppBaseInfo.
-
-        应用所属分类  # noqa: E501
-
-        :param app_classifications: The app_classifications of this V1AppBaseInfo.  # noqa: E501
-        :type: list[V1AppClassifications]
-        """
-        if self.local_vars_configuration.client_side_validation and app_classifications is None:  # noqa: E501
-            raise ValueError("Invalid value for `app_classifications`, must not be `None`")  # noqa: E501
-
-        self._app_classifications = app_classifications
 
     @property
     def app_detail_url(self):

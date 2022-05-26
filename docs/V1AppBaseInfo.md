@@ -3,7 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**app_classifications** | [**list[V1AppClassifications]**](V1AppClassifications.md) | 应用所属分类 | 
 **app_detail_url** | **str** | 应用详情 URL | 
 **app_key_id** | **str** | 应用 ID | 
 **create_time** | **datetime** | 创建时间 | 
