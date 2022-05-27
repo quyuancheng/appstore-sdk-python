@@ -1,11 +1,12 @@
-# V1AppClassifications
+# V1Organization
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**app_classification_id** | **str** | 应用分类 ID | 
-**app_classification_name** | **str** | 分类名称 | 
-**parent_app_classification_id** | **str** | 父级分类 ID | 
+**desc** | **str** | 描述 | 
+**eid** | **str** | 企业 ID | 
+**name** | **str** | 名称 | 
+**org_id** | **str** | 组织机构 ID | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**id** | **int** |  | 
 **attr_alt_value** | **str** |  | 
 **attr_default_value** | **str** |  | 
 **attr_info** | **str** |  | 

@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**id** | **int** |  | 
 **build_source** | **str** |  | 
 **build_version** | **str** |  | 
 **category** | **str** |  | 

@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **annotations** | **dict(str, str)** |  | [optional] 
-**app_config_groups** | [**list[V1alpha1AppConfigGroup]**](V1alpha1AppConfigGroup.md) |  | [optional] 
+**app_config_groups** | [**list[V1alpha1AppConfigGroup]**](V1alpha1AppConfigGroup.md) |  | 
 **apps** | [**list[V1alpha1Component]**](V1alpha1Component.md) |  | 
 **group_key** | **str** |  | 
 **group_name** | **str** |  | 

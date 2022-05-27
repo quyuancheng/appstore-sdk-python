@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**component_keys** | **list[str]** |  | 
+**component_ids** | **list[str]** |  | 
 **config_items** | **dict(str, str)** |  | 
 **injection_type** | **str** |  | 
 **name** | **str** |  | 
