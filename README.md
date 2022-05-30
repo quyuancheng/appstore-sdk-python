@@ -99,6 +99,7 @@ Class | Method | HTTP request | Description
 *MarketOpenapiApi* | [**create_app_version**](docs/MarketOpenapiApi.md#create_app_version) | **POST** /app-server/openapi/apps/{appID}/versions | 创建应用版本
 *MarketOpenapiApi* | [**get_app_hub_info**](docs/MarketOpenapiApi.md#get_app_hub_info) | **GET** /app-server/openapi/apps/{appID}/apphubinfo | 获取镜像仓库信息
 *MarketOpenapiApi* | [**get_app_plugin_list**](docs/MarketOpenapiApi.md#get_app_plugin_list) | **GET** /app-server/openapi/apps/plugins | 应用插件列表
+*MarketOpenapiApi* | [**get_app_temp_list**](docs/MarketOpenapiApi.md#get_app_temp_list) | **GET** /app-server/openapi/apps/template | 控制台应用模版列表
 *MarketOpenapiApi* | [**get_market_info**](docs/MarketOpenapiApi.md#get_market_info) | **GET** /app-server/openapi/info | 获取商店信息
 *MarketOpenapiApi* | [**get_orgs**](docs/MarketOpenapiApi.md#get_orgs) | **GET** /app-server/openapi/organizations | 获取组织机构(行业)列表
 *MarketOpenapiApi* | [**get_user_app_detail**](docs/MarketOpenapiApi.md#get_user_app_detail) | **GET** /app-server/openapi/apps/{appID} | 应用详情

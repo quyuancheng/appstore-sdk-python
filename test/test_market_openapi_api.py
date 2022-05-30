@@ -64,6 +64,13 @@ class TestMarketOpenapiApi(unittest.TestCase):
         """
         pass
 
+    def test_get_app_temp_list(self):
+        """Test case for get_app_temp_list
+
+        控制台应用模版列表  # noqa: E501
+        """
+        pass
+
     def test_get_market_info(self):
         """Test case for get_market_info
 
