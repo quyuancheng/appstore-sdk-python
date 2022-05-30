@@ -57,6 +57,13 @@ class TestMarketOpenapiApi(unittest.TestCase):
         """
         pass
 
+    def test_get_app_plugin_list(self):
+        """Test case for get_app_plugin_list
+
+        应用插件列表  # noqa: E501
+        """
+        pass
+
     def test_get_market_info(self):
         """Test case for get_market_info
 
